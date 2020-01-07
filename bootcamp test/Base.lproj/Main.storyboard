@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller69-->
+        <scene sceneID="c6r-Kh-4Pr">
+            <objects>
+                <viewController id="1qg-sQ-3zK" customClass="ViewController69" customModule="coookieCODE" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gWd-8a-BZz"/>
+                        <viewControllerLayoutGuide type="bottom" id="s5Z-0x-gRk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zad-b9-FaN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TTa-dF-Ckw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Cookie" id="Mt7-YH-MUw">
+                                        <barButtonItem key="backBarButtonItem" title="&lt;Back" id="2SW-FT-UwB"/>
+                                        <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="SMh-xW-gl9">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="h6V-F1-9Xy"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="big cookie" translatesAutoresizingMaskIntoConstraints="NO" id="gOg-wT-P8b">
+                                <rect key="frame" x="0.0" y="571" width="414" height="333"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cookieeeee" translatesAutoresizingMaskIntoConstraints="NO" id="giS-LF-jOQ">
+                                <rect key="frame" x="87" y="221" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="9YY-W9-O77" appends="YES" id="Yoq-6u-3Rk"/>
+                                    <outletCollection property="gestureRecognizers" destination="ycC-l4-dNA" appends="YES" id="yTf-Aw-PRu"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <gestureRecognizers/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0yM-8h-pOs"/>
+                    <connections>
+                        <outlet property="ImageView" destination="giS-LF-jOQ" id="3Nh-PD-w6y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mBh-SO-7tM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="9YY-W9-O77">
+                    <connections>
+                        <action selector="onViewPan:" destination="1qg-sQ-3zK" id="5j7-qu-iK8"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="ycC-l4-dNA">
+                    <connections>
+                        <action selector="onViewPinch:" destination="1qg-sQ-3zK" id="ezT-gZ-Xaq"/>
+                    </connections>
+                </pinchGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-714.49275362318849" y="35.491071428571423"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="coookieCODE" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="homebg" translatesAutoresizingMaskIntoConstraints="NO" id="9Bi-eN-aAn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9s0-ae-TQJ">
+                                <rect key="frame" x="108" y="318" width="199.00000000000006" height="172"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="playyyy"/>
+                                <connections>
+                                    <segue destination="oXR-3a-ARZ" kind="show" id="cwb-RH-cmL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMv-uE-5Oj">
+                                <rect key="frame" x="177" y="558" width="61" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="playBtn"/>
+                                <connections>
+                                    <segue destination="1qg-sQ-3zK" kind="show" id="6ma-eP-aKv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9Bi-eN-aAn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="L0M-kZ-we4"/>
+                            <constraint firstItem="9Bi-eN-aAn" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="MPM-2J-JIc"/>
+                            <constraint firstItem="9Bi-eN-aAn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="U4Y-T7-8jX"/>
+                            <constraint firstAttribute="trailing" secondItem="9Bi-eN-aAn" secondAttribute="trailing" id="xls-Zs-ek3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="J3Y-Gx-lZR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.884057971014496" y="36.830357142857139"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="0CK-0P-FT8">
+            <objects>
+                <viewController id="oXR-3a-ARZ" customClass="GameViewController" customModule="coookieCODE" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3i8-iJ-hrl"/>
+                        <viewControllerLayoutGuide type="bottom" id="l0Z-e2-QNA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aJ0-6O-N55">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="gamebg" translatesAutoresizingMaskIntoConstraints="NO" id="iya-5W-eoR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="895"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7o-aK-ZOK">
+                                <rect key="frame" x="77" y="234" width="223" height="178"/>
+                                <state key="normal" image="150px-Cookie"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="oXR-3a-ARZ" eventType="touchUpInside" id="dCv-rT-J8q"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AqF-uL-c1K">
+                                <rect key="frame" x="0.0" y="515" width="414" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="y3e-jP-qkP"/>
+                                    <constraint firstAttribute="height" constant="112" id="y5X-gY-aK4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="55c-Ec-LhI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Game" id="8nC-Xg-8cJ">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="H3A-yz-hTt">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="oEC-ZB-qv1"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qBS-3s-dLD">
+                                <rect key="frame" x="1" y="798" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="n1S-Va-ZQY"/>
+                                    <barButtonItem systemItem="refresh" id="3zc-zA-MNt">
+                                        <connections>
+                                            <action selector="reset:" destination="oXR-3a-ARZ" id="wMt-l9-GRX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="OTd-nh-kOL"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iya-5W-eoR" firstAttribute="bottom" secondItem="l0Z-e2-QNA" secondAttribute="top" id="5Sh-fH-X08"/>
+                            <constraint firstItem="iya-5W-eoR" firstAttribute="top" secondItem="aJ0-6O-N55" secondAttribute="top" id="9tU-ey-eEP"/>
+                            <constraint firstItem="c7o-aK-ZOK" firstAttribute="centerX" secondItem="AqF-uL-c1K" secondAttribute="centerX" id="RQf-YE-AzK"/>
+                            <constraint firstItem="c7o-aK-ZOK" firstAttribute="leading" secondItem="aJ0-6O-N55" secondAttribute="leadingMargin" constant="70" id="Rw2-87-dEq"/>
+                            <constraint firstAttribute="trailing" secondItem="iya-5W-eoR" secondAttribute="trailing" id="abZ-mT-Vse"/>
+                            <constraint firstItem="AqF-uL-c1K" firstAttribute="top" secondItem="c7o-aK-ZOK" secondAttribute="bottom" constant="46" id="bzM-ot-ha0"/>
+                            <constraint firstItem="iya-5W-eoR" firstAttribute="centerY" secondItem="c7o-aK-ZOK" secondAttribute="centerY" id="fLe-oG-QMC"/>
+                            <constraint firstItem="iya-5W-eoR" firstAttribute="centerX" secondItem="c7o-aK-ZOK" secondAttribute="centerX" id="r3b-BX-eMS"/>
+                            <constraint firstItem="iya-5W-eoR" firstAttribute="leading" secondItem="aJ0-6O-N55" secondAttribute="leading" id="u1W-O6-ZRc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hdk-1U-e1k"/>
+                    <connections>
+                        <outlet property="numLabel" destination="AqF-uL-c1K" id="Ejc-2o-4j1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YXK-xp-0zd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="743.47826086956525" y="36.160714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="150px-Cookie" width="150" height="150"/>
+        <image name="big cookie" width="1200" height="600"/>
+        <image name="cookieeeee" width="480" height="320"/>
+        <image name="gamebg" width="640" height="1136"/>
+        <image name="homebg" width="640" height="1136"/>
+        <image name="playBtn" width="255" height="113"/>
+        <image name="playyyy" width="400" height="400"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="h6V-F1-9Xy"/>
+    </inferredMetricsTieBreakers>
+</document>
